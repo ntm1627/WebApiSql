@@ -6,9 +6,10 @@ namespace WebApiSql.Models
 {
     public partial class InventoryContext : DbContext
     {
-        public InventoryContext()
-        {
-        }
+        //This needs to be removed to scaffold the controller
+        //public InventoryContext()
+        //{
+        //}
 
         public InventoryContext(DbContextOptions<InventoryContext> options)
             : base(options)
@@ -23,7 +24,7 @@ namespace WebApiSql.Models
             if (!optionsBuilder.IsConfigured)
             {
 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=Inventory;Integrated Security=True");
+           //     optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=Inventory;Integrated Security=True");
             }
         }
 
