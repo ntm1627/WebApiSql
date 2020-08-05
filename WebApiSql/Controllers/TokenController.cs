@@ -12,7 +12,7 @@ using WebApiSql.Models;
 
 namespace WebApiSql.Controllers
 {
-    [Authorize]
+    
     [Route("api/[controller]")]
     [ApiController]
     public class TokenController : ControllerBase
